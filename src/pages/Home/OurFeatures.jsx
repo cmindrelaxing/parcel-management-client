@@ -63,7 +63,7 @@ const OurFeatures = () => {
                             <div className=" text-[#ff4800] text-4xl font-bold">
                             <CountUp
                             end={findAllBookings?.length}
-                            duration={2}
+                            duration={5}
                             />
                             </div>
                             <h3 className=" text-xl md:text-2xl lg:text-xl font-semibold">Parcel Booked</h3>
@@ -77,7 +77,7 @@ const OurFeatures = () => {
                             <div className=" text-[#ff4800] text-4xl font-bold">
                             <CountUp
                             end={500}
-                            duration={2}
+                            duration={5}
                             />
                             </div>
                             <h3 className=" text-xl md:text-2xl lg:text-xl font-semibold">Parcel Delivered</h3>
@@ -91,7 +91,7 @@ const OurFeatures = () => {
                             <div className=" text-[#ff4800] text-4xl font-bold">
                             <CountUp
                             end={filteredUsers?.length}
-                            duration={2}
+                            duration={5}
                             />
                             </div>
                             <h3 className=" text-xl md:text-2xl lg:text-xl font-semibold">People Using App</h3>
