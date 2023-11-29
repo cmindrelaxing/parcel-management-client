@@ -2,13 +2,23 @@ import { Link } from "react-router-dom";
 import useAppUsers from "../../hooks/useAppUsers";
 import DashboardContainer from "../Shared/Container/DashboardContainer";
 import { FaPenAlt } from "react-icons/fa";
+import useParcels from "../../hooks/useParcels";
 
 const AllUsers = () => {
 
+
     // All users
     const [allUsersInfo, ] = useAppUsers();
+    const [parcelInfo, ] = useParcels();
     const filteredUsers = allUsersInfo?.filter(user => user.role === 'user');
-    // console.log(allUsersInfo);
+
+
+
+    const emailToMatch = `${parcelInfo?.name}`;
+    const filteredUsers1 = filteredUsers.filter(user => user.email === emailToMatch);
+    const filteredUsers2 = parcelInfo.filter(user => user.email === emailToMatch);
+    const combinedResults = [...filteredUsers, ...parcelInfo];
+    console.log(filteredUsers1, combinedResults, filteredUsers2);
 
     // User's text
     const text = "'s";
@@ -33,8 +43,7 @@ const AllUsers = () => {
                             </thead>
                             <tbody>
                             {
-
-                                filteredUsers?.map((user, index) => <tr key={user._id}>
+                                combinedResults?.map((user, index) => <tr key={user._id}>
                                     <th>{index + 1}</th> 
                                     <td>{user?.name}</td>
                                     <td>{user?.phone}</td>
