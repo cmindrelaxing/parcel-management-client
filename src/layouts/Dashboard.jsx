@@ -100,6 +100,17 @@ const Dashboard = () => {
                         <i className='bx bx-gift' ></i> My Parcels ({filteredBooking?.length})
                         </NavLink>
                         </li>
+                        
+                        <li>
+                        <NavLink
+                        to="/dashboard/myProfile"
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? "bg-yellow-400 text-white py-1  rounded-tl-xl rounded-br-xl rounded-bl-none rounded-tr-none    hover:bg-yellow-400 hover:text-white hover:rounded-full transition mr-5 ml-5" : " hover:text-white mr-5 ml-5"
+                        }
+                        >
+                        <i className='bx bx-user-circle' ></i> My Profile
+                        </NavLink>
+                        </li>
                         </>
                         :
                         isDelivery
@@ -261,6 +272,17 @@ const Dashboard = () => {
                     <i className='bx bx-gift' ></i> My Parcels ({filteredBooking?.length})
                     </NavLink>
                     </li>
+                    
+                    <li onClick={menuControl}>
+                    <NavLink
+                    to="/dashboard/myProfile"
+                    className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "bg-yellow-400 text-white py-1  rounded-tl-xl rounded-br-xl rounded-bl-none rounded-tr-none    hover:bg-yellow-400 hover:text-white hover:rounded-full transition mr-5 ml-5" : " hover:text-white mr-5 ml-5"
+                    }
+                    >
+                    <i className='bx bx-user-circle' ></i> My Profile
+                    </NavLink>
+                    </li>
                     </>
                     :
                     isDelivery
@@ -296,6 +318,17 @@ const Dashboard = () => {
                     }
                     >
                     <i className='bx bx-gift' ></i> My Parcels ({filteredBooking?.length})
+                    </NavLink>
+                    </li>
+                    
+                    <li onClick={menuControl}>
+                    <NavLink
+                    to="/dashboard/myProfile"
+                    className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "bg-yellow-400 text-white py-1  rounded-tl-xl rounded-br-xl rounded-bl-none rounded-tr-none    hover:bg-yellow-400 hover:text-white hover:rounded-full transition mr-5 ml-5" : " hover:text-white mr-5 ml-5"
+                    }
+                    >
+                    <i className='bx bx-user-circle' ></i> My Profile
                     </NavLink>
                     </li>
                     </>

@@ -41,7 +41,7 @@ const SocialGoogle = () => {
 
     return (
         <div>
-            <button onClick={googleSignUp} className="flex items-center font-medium bg-[#FF4800] text-white py-2 hover:bg-black hover:text-white px-8 rounded-full"><i className='mr-1 bx bxl-google' ></i><span className="text-white">G</span>oogle</button>
+            <button onClick={googleSignUp} className=" ml-0 flex items-center justify-center font-medium bg-[#FF4800] text-white py-2 hover:bg-black hover:text-white px-5 md:px-6 lg:px-8 rounded-full gap-1"><i className='bx bxl-google' ></i><span className="text-white">G</span>oogle</button>
         </div>
     );
 };

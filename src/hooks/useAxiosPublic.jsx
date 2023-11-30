@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosPublic = axios.create({
-    baseURL: 'https://parcel-management-server-f42w7wa73.vercel.app',
+    baseURL: 'https://parcel-management-server-d1gjvc726.vercel.app',
     // withCredentials: true,
 });
 

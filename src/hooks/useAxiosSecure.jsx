@@ -6,7 +6,7 @@ import useAuth from "./useAuth";
 
 
 const axiosSecure = axios.create({
-    baseURL: 'https://parcel-management-server-f42w7wa73.vercel.app',
+    baseURL: 'https://parcel-management-server-d1gjvc726.vercel.app',
     withCredentials: true,
 })
 

@@ -41,7 +41,7 @@ const SocialGithub = () => {
 
     return (
         <div>
-            <button onClick={githubSignUp} className="flex items-center font-medium bg-[#FF4800] text-white py-2 hover:bg-black px-8 rounded-full"><i className='mr-1 bx bxl-github' ></i><span className="">G</span>ithub</button>
+            <button onClick={githubSignUp} className="flex justify-center items-center gap-1 font-medium bg-[#FF4800] text-white py-2 hover:bg-black px-5 md:px-6 lg:px-8 rounded-full"><i className='bx bxl-github' ></i><span className="">G</span>ithub</button>
         </div>
     );
 };

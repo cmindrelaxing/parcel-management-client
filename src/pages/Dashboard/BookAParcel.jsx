@@ -155,7 +155,7 @@ const BookAParcel = () => {
                             <span className="label-text">Requested Delivery Date</span>
                         </label>
                         <input type="date" placeholder="Delivery Date" name="deliveryDate" className="focus:outline-none focus:border-[2px] focus:border-[#5dff33] focus:text-[#5dff33] input input-bordered" required />
-                        </div>
+                    </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div className="form-control">
                         <label className="label">

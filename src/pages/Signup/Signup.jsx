@@ -121,7 +121,7 @@ const Signup = () => {
                         <label className="label">
                             <span className="label-text">Photo URL</span>
                         </label>
-                        <input type="text" placeholder="URL" name="photo" className="focus:outline-none focus:border-[2px] focus:border-[#5dff33] focus:text-[#5dff33] input input-bordered" required />
+                        <input type="text" placeholder="URL" name="photo" className="focus:outline-none focus:border-[2px] focus:border-[#5dff33] focus:text-[#5dff33] input input-bordered" />
                         </div>
 
                         <div className="form-control">
@@ -144,7 +144,7 @@ const Signup = () => {
                             <h2 className="text-2xl font-semibold text-center dancing">Signup with</h2>
                             <div className="divider">OR</div>
                             <div className="flex justify-between items-center mt-5 gap-3">
-                                <SocialGoogle></SocialGoogle>
+                                <SocialGoogle className="mr-0"></SocialGoogle>
                                 <SocialGithub></SocialGithub>
                             </div>
                         </div>

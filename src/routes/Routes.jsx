@@ -86,7 +86,7 @@ const router = createBrowserRouter([
             {
                 path: 'myParcels/updateBooking/:id',
                 element: <UpdateBooking></UpdateBooking>,
-                loader: ({params}) => fetch(`https://parcel-management-server-f42w7wa73.vercel.app/bookings/${params?.id}`)
+                loader: ({params}) => fetch(`https://parcel-management-server-d1gjvc726.vercel.app/bookings/${params?.id}`)
             },
             {
                 path: 'myParcels/payment',

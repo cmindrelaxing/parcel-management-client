@@ -84,7 +84,7 @@ const MyParcels = () => {
                                     <td>{book?.bookingDate}</td>
                                     <td>{book?.deliveryDate}</td>
                                     <td>{book?.approximate}</td>
-                                    <td>{book?.deliveryMen}</td>
+                                    <td>{book?.delivery_name}</td>
                                     <td>
                                         <button className="text-green-400 bg-green-100 hover:bg-black hover:text-white btn font-semibold">{book?.status}</button>
                                     </td>

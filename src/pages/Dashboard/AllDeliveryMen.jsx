@@ -8,7 +8,7 @@ const AllDeliveryMen = () => {
     // All users
     const [allUsersInfo, ] = useAppUsers();
     const filteredUsers = allUsersInfo?.filter(user => user.role === 'delivery') || [];
-    // console.log(allUsersInfo);
+    // console.log(filteredUsers);
 
     // User's text
     const text = "'s";

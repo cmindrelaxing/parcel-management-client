@@ -43,8 +43,6 @@ const NavBar = () => {
         >
         Dashboard
         </NavLink>
-
-            
     </>
 
     return (
@@ -85,13 +83,13 @@ const NavBar = () => {
                                     <i className=' hover:text-yellow-400 text-[#FF4800] bx bxs-bell-ring'></i>
                                     </Link>
                                     {
-                                        user?.photoURL ? <>
-                                        <img onClick={openProfile} src={user?.photoURL} className=" cursor-pointer rounded-full sm:inline border-box w-8 h-8" alt=""  data-aos="fade-left"/>
-                                        </> 
-                                        : 
-                                        <>
-                                        <img onClick={openProfile} src='https://i.ibb.co/PDCHgYT/photo-6275977664170932680-y.jpg' className=" cursor-pointer rounded-full sm:inline border-box w-8 h-8" alt=""  data-aos="fade-left"/>
-                                        </>
+                                        filteredUsers[0]?.image ? 
+                                        <img onClick={openProfile} className=" cursor-pointer rounded-full sm:inline border-box w-8 h-8" data-aos="fade-left" src={filteredUsers[0]?.image} alt="" />
+                                        :
+                                        user?.photoURL ?
+                                        <img onClick={openProfile} className=" cursor-pointer rounded-full sm:inline border-box w-8 h-8" data-aos="fade-left" src={user?.photoURL} alt="" />
+                                        :
+                                        <img onClick={openProfile} className=" cursor-pointer rounded-full sm:inline border-box w-8 h-8" data-aos="fade-left" src='https://i.ibb.co/PDCHgYT/photo-6275977664170932680-y.jpg' alt="" />
                                     }
                                 </div>
                                 {

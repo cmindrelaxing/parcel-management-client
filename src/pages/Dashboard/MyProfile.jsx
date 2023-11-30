@@ -15,8 +15,8 @@ const MyProfile = () => {
     const { register, handleSubmit, reset } = useForm();
     const [allUsersInfo, refetch] = useAppUsers();
     const {user} = useAuth();
-    const axiosPublic = useAxiosPublic();
     const filteredUsers = allUsersInfo.filter(userG => userG.email === user?.email);
+    const axiosPublic = useAxiosPublic();
     // console.log(filteredUsers);
 
     // Profile upadate button
@@ -60,7 +60,10 @@ const MyProfile = () => {
                         filteredUsers[0]?.image ? 
                         <img className=" border-8 border-yellow-400 mx-auto rounded-full w-40 h-40 mb-10" src={filteredUsers[0]?.image} alt="" />
                         :
+                        user?.photoURL ?
                         <img className=" border-8 border-yellow-400 mx-auto rounded-full w-40 h-40 mb-10" src={user?.photoURL} alt="" />
+                        :
+                        <img className=" border-8 border-yellow-400 mx-auto rounded-full w-40 h-40 mb-10" src='https://i.ibb.co/PDCHgYT/photo-6275977664170932680-y.jpg' alt="" />
                     }
                     <div className=" rounded-lg bg-white p-4 md:p-5 lg:p-10 space-y-3">
                         {
